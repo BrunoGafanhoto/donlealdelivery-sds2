@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-height: 710px) {
+@media (max-height: 850px) {
   .home-container {
     height:auto!important;
     margin-bottom: 30px;
