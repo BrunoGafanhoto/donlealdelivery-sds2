@@ -6,7 +6,7 @@ import {ReactComponent as InstagranIcon} from './instagram.svg';
 function Footer(){
     return(
       <footer className="main-footer">
-          App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
+          &copy;DonLeal Delivery - Desenvolvido por Bruno dos Santos
           <div className="footer-icons">
 
                 <a href="" target="_new">
