@@ -1,5 +1,5 @@
 .home-container {
-  padding-top: 40px;
+  padding-top: 25px;
   height: calc(100vh - 224px)!important;
 }
 
@@ -87,9 +87,9 @@
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 710px) {
   .home-container {
-    height: auto;
+    height:auto!important;
     margin-bottom: 30px;
   }
 }
