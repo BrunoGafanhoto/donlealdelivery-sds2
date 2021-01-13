@@ -1,16 +1,22 @@
-
-import { OpenSans_700Bold } from '@expo-google-fonts/open-sans';
 import React from 'react';
+import { OpenSans_700Bold } from '@expo-google-fonts/open-sans';
+
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
+import Header from '../Header';
 
  function Home() {
-     const handleOnPress = () => {
 
+    const navigation = useNavigation();
+
+     const handleOnPress = () => {
+        navigation.navigate('Orders');
      }
     
   return (
     <>
+    <Header/>
     <View style={styles.container}>
        <Image source={require('../assets/deliveryman.png')}/>
         <Text style={styles.title}>Acompanhe os pedidos e {'\n'}entregamos para você!!!</Text>
@@ -30,7 +36,7 @@ import { RectButton } from 'react-native-gesture-handler';
 const styles = StyleSheet.create({
     container: {
        
-        marginTop: '5%',
+        marginTop: '20%',
         alignItems: 'center'
       },
       title: {
@@ -66,7 +72,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: '#FFF',
         letterSpacing: -0.24
-      }
+      },
+   
 });
 
 
