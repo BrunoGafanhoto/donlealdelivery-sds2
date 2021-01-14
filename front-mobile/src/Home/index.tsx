@@ -2,7 +2,7 @@ import React from 'react';
 import { OpenSans_700Bold } from '@expo-google-fonts/open-sans';
 
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import Header from '../Header';
 
@@ -19,14 +19,16 @@ import Header from '../Header';
     <Header/>
     <View style={styles.container}>
        <Image source={require('../assets/deliveryman.png')}/>
-        <Text style={styles.title}>Acompanhe os pedidos e {'\n'}entregamos para você!!!</Text>
+        <Text style={styles.title}>Acompanhe os pedidos!!!</Text>
         <Text style={styles.subTitle}>Receba todos os pedidos do seu {'\n'} restaurante na palma da sua mão
 </Text>
     </View>
     <View style={styles.footer}>
+      <TouchableOpacity >
         <RectButton style={styles.button} onPress={handleOnPress}>
             <Text style={styles.buttonText}> VER PEDIDOS</Text>
         </RectButton>
+        </TouchableOpacity> 
     </View>
     </>
    
@@ -36,7 +38,7 @@ import Header from '../Header';
 const styles = StyleSheet.create({
     container: {
        
-        marginTop: '20%',
+        marginTop: '25%',
         alignItems: 'center'
       },
       title: {
